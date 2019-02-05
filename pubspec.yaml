@@ -1,6 +1,6 @@
 name: colour_log
 description: A new Flutter package project.
-version: 0.1.0
+version: 0.2.0
 author: wangji <genius840215@163.com>
 homepage: https://github.com/wilfordw/flutter_colour_log
 
@@ -10,6 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  intl: ^0.15.7
 
 dev_dependencies:
   flutter_test:

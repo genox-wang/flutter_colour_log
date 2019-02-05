@@ -1,14 +1,39 @@
 # colour_log
 
-A new Flutter package project.
+## Introduce
 
-## Getting Started
+A sample logger tool for flutter. support logLevel config and log format. Hope making log colorful and logLevel based callback in the future
 
-This project is a starting point for a Dart
-[package](https://flutter.io/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+## How to Use
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+add dependence in pubspec.yaml
+
+```
+dependencies:
+  flutter:
+    sdk: flutter
+
+  ...
+
+  colour_log: ^0.2.0
+
+```
+
+```
+import "package:colour_log/colour_log.dart"
+
+...
+
+  var log = Logger(); // default log level debug
+  log.d("debug");
+  log.i("info");
+  log.e("warn");
+  log.e("error");
+
+  log.logLevel = LogLevel.INFO
+  log.d("debug"); // will not show
+  log.i("info");
+  log.e("warn");
+  log.e("error");
+
+```
